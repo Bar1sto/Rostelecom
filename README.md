@@ -15,22 +15,22 @@ pip install -r req.txt
 ## Диаграмма взаимодествия
 ![Diagram](docs/dgrm.png)
 
-## Запуск (в корне проекта)
+# Запуск (в корне проекта)
 
-# Первый терминал (Сервис А)
+## Первый терминал (Сервис А)
 ```bash
 PYTHONPATH=. python -m uvicorn app.service_a.main:app --host 0.0.0.0 --port 8444 --ssl-certfile ./cert.pem --ssl-keyfile ./key.pem
 ```
-# Второй терминал (Сервис В)
+## Второй терминал (Сервис В)
 ```bash
 YTHONPATH=. python -m uvicorn app.service_b.main:app --host 0.0.0.0 --port 8443 --ssl-certfile ./cert.pem --ssl-keyfile ./key.pem
 ```
-# Третий сервис (Worker)
+## Третий сервис (Worker)
 ```bash
 PYTHONPATH=. python -m app.worker.main
 ```
 
-## Запуск через Docker
+# Запуск через Docker
 ```bash
 # сборка и запуск всех сервисов + RabbitMQ
 docker compose up -d --build
@@ -43,7 +43,7 @@ docker compose logs -f service_a
 # docker compose down
 ```
 
-## Быстрые проверки
+# Быстрые проверки
 
 ```bash
 #health
@@ -87,7 +87,7 @@ curl -sk "https://localhost:8443/api/v1/equipment/cpe/DEV500/task/$t500"
 # {"code":500,...}
 ```
 
-## Запуск интеграционного теста
+# Запуск интеграционного теста
 ```bash
 pytest -q
 ```
