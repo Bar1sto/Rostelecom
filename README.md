@@ -15,7 +15,7 @@ pip install -r req.txt
 ## Диаграмма взаимодествия
 ![Diagram](docs/dgrm.png)
 
-## Запуск
+## Запуск (в корне проекта)
 
 # Первый терминал (Сервис А)
 ```bash
@@ -86,3 +86,9 @@ t500=$(curl -sk https://localhost:8443/api/v1/equipment/cpe/DEV500 \
 curl -sk "https://localhost:8443/api/v1/equipment/cpe/DEV500/task/$t500"     
 # {"code":500,...}
 ```
+
+## Запуск интеграционного теста
+```bash
+pytest -q
+```
+
