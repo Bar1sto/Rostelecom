@@ -1,0 +1,623 @@
+2025-08-20 18:07:22,395 INFO [service_b] Logging configured. file=logs/service_b.log level=INFO
+2025-08-20 18:07:22,397 INFO [uvicorn.error] Started server process [4260]
+2025-08-20 18:07:22,397 INFO [uvicorn.error] Started server process [4260]
+2025-08-20 18:07:22,397 INFO [uvicorn.error] Waiting for application startup.
+2025-08-20 18:07:22,397 INFO [uvicorn.error] Waiting for application startup.
+2025-08-20 18:07:22,487 INFO [service_b.consumer] result-consumer started
+2025-08-20 18:07:22,488 INFO [uvicorn.error] Application startup complete.
+2025-08-20 18:07:22,488 INFO [uvicorn.error] Application startup complete.
+2025-08-20 18:07:22,488 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-20 18:07:22,488 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-20 18:07:31,688 INFO [uvicorn.error] Shutting down
+2025-08-20 18:07:31,688 INFO [uvicorn.error] Shutting down
+2025-08-20 18:07:31,790 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-20 18:07:31,790 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-20 18:07:31,795 INFO [uvicorn.error] Application shutdown complete.
+2025-08-20 18:07:31,795 INFO [uvicorn.error] Application shutdown complete.
+2025-08-20 18:07:31,795 INFO [uvicorn.error] Finished server process [4260]
+2025-08-20 18:07:31,795 INFO [uvicorn.error] Finished server process [4260]
+2025-08-20 18:08:59,312 INFO [service_b] Logging configured. file=logs/service_b.log level=INFO
+2025-08-20 18:08:59,313 INFO [uvicorn.error] Started server process [4737]
+2025-08-20 18:08:59,313 INFO [uvicorn.error] Started server process [4737]
+2025-08-20 18:08:59,313 INFO [uvicorn.error] Waiting for application startup.
+2025-08-20 18:08:59,313 INFO [uvicorn.error] Waiting for application startup.
+2025-08-20 18:08:59,324 INFO [service_b.consumer] result-consumer started
+2025-08-20 18:08:59,324 INFO [uvicorn.error] Application startup complete.
+2025-08-20 18:08:59,324 INFO [uvicorn.error] Application startup complete.
+2025-08-20 18:08:59,325 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-20 18:08:59,325 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-20 18:09:11,860 INFO [uvicorn.error] Shutting down
+2025-08-20 18:09:11,860 INFO [uvicorn.error] Shutting down
+2025-08-20 18:09:11,962 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-20 18:09:11,962 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-20 18:09:11,966 INFO [uvicorn.error] Application shutdown complete.
+2025-08-20 18:09:11,966 INFO [uvicorn.error] Application shutdown complete.
+2025-08-20 18:09:11,967 INFO [uvicorn.error] Finished server process [4737]
+2025-08-20 18:09:11,967 INFO [uvicorn.error] Finished server process [4737]
+2025-08-21 00:07:47,389 INFO [service_b] Logging configured. file=logs/service_b.log level=INFO
+2025-08-21 00:07:47,390 INFO [uvicorn.error] Started server process [30390]
+2025-08-21 00:07:47,390 INFO [uvicorn.error] Started server process [30390]
+2025-08-21 00:07:47,390 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:07:47,390 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:07:47,498 INFO [service_b.consumer] result-consumer started
+2025-08-21 00:07:47,499 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:07:47,499 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:07:47,499 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:07:47,499 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:08:04,022 INFO [uvicorn.access] 127.0.0.1:55429 - "GET /health HTTP/1.1" 200
+2025-08-21 00:08:12,106 INFO [service_b] create_task id=ABC123 task_id=0b1a9f0d-8c45-4bd4-98f2-618802a3bf3a
+2025-08-21 00:08:12,108 INFO [uvicorn.access] 127.0.0.1:55435 - "POST /api/v1/equipment/cpe/ABC123 HTTP/1.1" 500
+2025-08-21 00:08:12,108 ERROR [uvicorn.error] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 213, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/app/service_b/main.py", line 70, in create_task
+    "created_at": TASK[task_id]["created_at"],
+                  ~~~~^^^^^^^^^
+KeyError: '0b1a9f0d-8c45-4bd4-98f2-618802a3bf3a'
+2025-08-21 00:08:12,108 ERROR [uvicorn.error] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 213, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/app/service_b/main.py", line 70, in create_task
+    "created_at": TASK[task_id]["created_at"],
+                  ~~~~^^^^^^^^^
+KeyError: '0b1a9f0d-8c45-4bd4-98f2-618802a3bf3a'
+2025-08-21 00:08:12,131 INFO [service_b] create_task id=ABC123 task_id=53a09476-8848-4e49-b490-f5b9024c6738
+2025-08-21 00:08:12,131 INFO [uvicorn.access] 127.0.0.1:55437 - "POST /api/v1/equipment/cpe/ABC123 HTTP/1.1" 500
+2025-08-21 00:08:12,131 ERROR [uvicorn.error] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 213, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/app/service_b/main.py", line 70, in create_task
+    "created_at": TASK[task_id]["created_at"],
+                  ~~~~^^^^^^^^^
+KeyError: '53a09476-8848-4e49-b490-f5b9024c6738'
+2025-08-21 00:08:12,131 ERROR [uvicorn.error] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 213, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/app/service_b/main.py", line 70, in create_task
+    "created_at": TASK[task_id]["created_at"],
+                  ~~~~^^^^^^^^^
+KeyError: '53a09476-8848-4e49-b490-f5b9024c6738'
+2025-08-21 00:08:12,144 INFO [service_b] create_task id=DEV404 task_id=242ce6d8-1149-48f5-ad65-ebf3775a71c1
+2025-08-21 00:08:12,144 INFO [uvicorn.access] 127.0.0.1:55439 - "POST /api/v1/equipment/cpe/DEV404 HTTP/1.1" 500
+2025-08-21 00:08:12,144 ERROR [uvicorn.error] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 213, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/app/service_b/main.py", line 70, in create_task
+    "created_at": TASK[task_id]["created_at"],
+                  ~~~~^^^^^^^^^
+KeyError: '242ce6d8-1149-48f5-ad65-ebf3775a71c1'
+2025-08-21 00:08:12,144 ERROR [uvicorn.error] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 213, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/app/service_b/main.py", line 70, in create_task
+    "created_at": TASK[task_id]["created_at"],
+                  ~~~~^^^^^^^^^
+KeyError: '242ce6d8-1149-48f5-ad65-ebf3775a71c1'
+2025-08-21 00:08:12,156 INFO [service_b] create_task id=DEV500 task_id=f9b1a1ab-baf7-4d41-a253-15807e3b8a02
+2025-08-21 00:08:12,156 INFO [uvicorn.access] 127.0.0.1:55441 - "POST /api/v1/equipment/cpe/DEV500 HTTP/1.1" 500
+2025-08-21 00:08:12,156 ERROR [uvicorn.error] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 213, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/app/service_b/main.py", line 70, in create_task
+    "created_at": TASK[task_id]["created_at"],
+                  ~~~~^^^^^^^^^
+KeyError: 'f9b1a1ab-baf7-4d41-a253-15807e3b8a02'
+2025-08-21 00:08:12,156 ERROR [uvicorn.error] Exception in ASGI application
+Traceback (most recent call last):
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        self.scope, self.receive, self.send
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 78, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/starlette/routing.py", line 75, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 302, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "/Users/vova/Documents/Rostelecom/venv/lib/python3.13/site-packages/fastapi/routing.py", line 213, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/vova/Documents/Rostelecom/app/service_b/main.py", line 70, in create_task
+    "created_at": TASK[task_id]["created_at"],
+                  ~~~~^^^^^^^^^
+KeyError: 'f9b1a1ab-baf7-4d41-a253-15807e3b8a02'
+2025-08-21 00:10:58,634 INFO [uvicorn.access] 127.0.0.1:55525 - "GET /health HTTP/1.1" 200
+2025-08-21 00:13:36,244 INFO [uvicorn.error] Shutting down
+2025-08-21 00:13:36,244 INFO [uvicorn.error] Shutting down
+2025-08-21 00:13:36,347 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:13:36,347 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:13:36,351 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:13:36,351 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:13:36,351 INFO [uvicorn.error] Finished server process [30390]
+2025-08-21 00:13:36,351 INFO [uvicorn.error] Finished server process [30390]
+2025-08-21 00:13:37,901 INFO [service_b] Logging configured. file=logs/service_b.log level=INFO
+2025-08-21 00:13:37,902 INFO [uvicorn.error] Started server process [32202]
+2025-08-21 00:13:37,902 INFO [uvicorn.error] Started server process [32202]
+2025-08-21 00:13:37,902 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:13:37,902 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:13:37,911 INFO [service_b.consumer] result-consumer started
+2025-08-21 00:13:37,912 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:13:37,912 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:13:37,912 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:13:37,912 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:13:40,929 INFO [uvicorn.access] 127.0.0.1:55571 - "GET /health HTTP/1.1" 200
+2025-08-21 00:14:33,026 INFO [uvicorn.access] 127.0.0.1:55580 - "GET /health HTTP/1.1" 200
+2025-08-21 00:14:42,713 INFO [uvicorn.access] 127.0.0.1:55582 - "GET /health HTTP/1.1" 200
+2025-08-21 00:14:54,445 INFO [uvicorn.access] 127.0.0.1:55588 - "GET /health HTTP/1.1" 200
+2025-08-21 00:14:57,832 INFO [uvicorn.error] Shutting down
+2025-08-21 00:14:57,832 INFO [uvicorn.error] Shutting down
+2025-08-21 00:14:57,934 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:14:57,934 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:14:57,939 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:14:57,939 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:14:57,939 INFO [uvicorn.error] Finished server process [32202]
+2025-08-21 00:14:57,939 INFO [uvicorn.error] Finished server process [32202]
+2025-08-21 00:15:00,357 INFO [service_b] Logging configured. file=logs/service_b.log level=INFO
+2025-08-21 00:15:00,358 INFO [uvicorn.error] Started server process [32989]
+2025-08-21 00:15:00,358 INFO [uvicorn.error] Started server process [32989]
+2025-08-21 00:15:00,358 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:15:00,358 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:15:00,368 INFO [service_b.consumer] result-consumer started
+2025-08-21 00:15:00,368 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:15:00,368 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:15:00,368 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:15:00,368 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:15:03,297 INFO [uvicorn.access] 127.0.0.1:55594 - "GET /health HTTP/1.1" 200
+2025-08-21 00:15:12,832 INFO [uvicorn.access] 127.0.0.1:55600 - "GET /health HTTP/1.1" 200
+2025-08-21 00:16:47,967 INFO [uvicorn.access] 127.0.0.1:55615 - "GET /health HTTP/1.1" 200
+2025-08-21 00:17:17,706 INFO [uvicorn.access] 127.0.0.1:55623 - "GET /health HTTP/1.1" 200
+2025-08-21 00:17:21,194 INFO [uvicorn.access] 127.0.0.1:55627 - "GET /health HTTP/1.1" 200
+2025-08-21 00:30:09,190 INFO [uvicorn.error] Shutting down
+2025-08-21 00:30:09,190 INFO [uvicorn.error] Shutting down
+2025-08-21 00:30:09,293 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:30:09,293 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:30:09,299 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:30:09,299 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:30:09,299 INFO [uvicorn.error] Finished server process [32989]
+2025-08-21 00:30:09,299 INFO [uvicorn.error] Finished server process [32989]
+2025-08-21 00:30:10,688 INFO [service_b] Logging configured. file=logs/service_b.log level=INFO
+2025-08-21 00:30:10,689 INFO [uvicorn.error] Started server process [36435]
+2025-08-21 00:30:10,689 INFO [uvicorn.error] Started server process [36435]
+2025-08-21 00:30:10,689 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:30:10,689 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:30:10,794 INFO [service_b.consumer] result-consumer started
+2025-08-21 00:30:10,794 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:30:10,794 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:30:10,794 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:30:10,794 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:30:12,297 INFO [uvicorn.access] 127.0.0.1:55803 - "GET /health HTTP/1.1" 200
+2025-08-21 00:39:12,998 INFO [uvicorn.error] Shutting down
+2025-08-21 00:39:12,998 INFO [uvicorn.error] Shutting down
+2025-08-21 00:39:13,102 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:39:13,102 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:39:13,107 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:39:13,107 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:39:13,107 INFO [uvicorn.error] Finished server process [36435]
+2025-08-21 00:39:13,107 INFO [uvicorn.error] Finished server process [36435]
+2025-08-21 00:39:14,896 INFO [service_b] Logging configured. file=logs/service_b.log level=INFO
+2025-08-21 00:39:14,897 INFO [uvicorn.error] Started server process [38365]
+2025-08-21 00:39:14,897 INFO [uvicorn.error] Started server process [38365]
+2025-08-21 00:39:14,897 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:39:14,897 INFO [uvicorn.error] Waiting for application startup.
+2025-08-21 00:39:14,908 INFO [service_b.consumer] result-consumer started
+2025-08-21 00:39:14,908 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:39:14,908 INFO [uvicorn.error] Application startup complete.
+2025-08-21 00:39:14,908 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:39:14,908 INFO [uvicorn.error] Uvicorn running on https://0.0.0.0:8443 (Press CTRL+C to quit)
+2025-08-21 00:39:18,330 INFO [uvicorn.access] 127.0.0.1:55862 - "GET /health HTTP/1.1" 200
+2025-08-21 00:39:25,391 INFO [service_b] create_task id=ABC123 task_id=60f3929d-4bde-4e01-8de0-ef1c1ec58851
+2025-08-21 00:39:25,393 INFO [service_b] published task.create task_id=60f3929d-4bde-4e01-8de0-ef1c1ec58851
+2025-08-21 00:39:25,393 INFO [uvicorn.access] 127.0.0.1:55864 - "POST /api/v1/equipment/cpe/ABC123 HTTP/1.1" 200
+2025-08-21 00:39:25,399 INFO [service_b] create_task id=ABC123 task_id=4dd0f699-bc62-4915-8129-79afdd61eeda
+2025-08-21 00:39:25,400 INFO [service_b] published task.create task_id=4dd0f699-bc62-4915-8129-79afdd61eeda
+2025-08-21 00:39:25,400 INFO [uvicorn.access] 127.0.0.1:55866 - "POST /api/v1/equipment/cpe/ABC123 HTTP/1.1" 200
+2025-08-21 00:39:25,404 INFO [uvicorn.access] 127.0.0.1:55868 - "GET /api/v1/equipment/cpe/ABC123/task/4dd0f699-bc62-4915-8129-79afdd61eeda HTTP/1.1" 200
+2025-08-21 00:39:25,409 INFO [service_b] create_task id=DEV404 task_id=337076d5-d15c-4b0f-89f0-af982fbf8759
+2025-08-21 00:39:25,410 INFO [service_b] published task.create task_id=337076d5-d15c-4b0f-89f0-af982fbf8759
+2025-08-21 00:39:25,410 INFO [uvicorn.access] 127.0.0.1:55870 - "POST /api/v1/equipment/cpe/DEV404 HTTP/1.1" 200
+2025-08-21 00:39:25,414 INFO [uvicorn.access] 127.0.0.1:55872 - "GET /api/v1/equipment/cpe/DEV404/task/337076d5-d15c-4b0f-89f0-af982fbf8759 HTTP/1.1" 200
+2025-08-21 00:39:25,936 INFO [uvicorn.access] 127.0.0.1:55880 - "GET /api/v1/equipment/cpe/DEV404/task/337076d5-d15c-4b0f-89f0-af982fbf8759 HTTP/1.1" 200
+2025-08-21 00:39:25,948 INFO [service_b] create_task id=DEV500 task_id=b3bdf023-04f9-4a22-a3c1-04131d71e2e9
+2025-08-21 00:39:25,949 INFO [service_b] published task.create task_id=b3bdf023-04f9-4a22-a3c1-04131d71e2e9
+2025-08-21 00:39:25,949 INFO [uvicorn.access] 127.0.0.1:55882 - "POST /api/v1/equipment/cpe/DEV500 HTTP/1.1" 200
+2025-08-21 00:39:25,955 INFO [uvicorn.access] 127.0.0.1:55886 - "GET /api/v1/equipment/cpe/DEV500/task/b3bdf023-04f9-4a22-a3c1-04131d71e2e9 HTTP/1.1" 200
+2025-08-21 00:39:26,466 INFO [uvicorn.access] 127.0.0.1:55888 - "GET /api/v1/equipment/cpe/DEV500/task/b3bdf023-04f9-4a22-a3c1-04131d71e2e9 HTTP/1.1" 200
+2025-08-21 00:39:26,980 INFO [uvicorn.access] 127.0.0.1:55892 - "GET /api/v1/equipment/cpe/DEV500/task/b3bdf023-04f9-4a22-a3c1-04131d71e2e9 HTTP/1.1" 200
+2025-08-21 00:39:27,501 INFO [uvicorn.access] 127.0.0.1:55894 - "GET /api/v1/equipment/cpe/DEV500/task/b3bdf023-04f9-4a22-a3c1-04131d71e2e9 HTTP/1.1" 200
+2025-08-21 00:39:28,023 INFO [uvicorn.access] 127.0.0.1:55896 - "GET /api/v1/equipment/cpe/DEV500/task/b3bdf023-04f9-4a22-a3c1-04131d71e2e9 HTTP/1.1" 200
+2025-08-21 00:39:28,545 INFO [uvicorn.access] 127.0.0.1:55898 - "GET /api/v1/equipment/cpe/DEV500/task/b3bdf023-04f9-4a22-a3c1-04131d71e2e9 HTTP/1.1" 200
+2025-08-21 00:39:29,057 INFO [uvicorn.access] 127.0.0.1:55902 - "GET /api/v1/equipment/cpe/DEV500/task/b3bdf023-04f9-4a22-a3c1-04131d71e2e9 HTTP/1.1" 200
+2025-08-21 00:39:35,146 INFO [service_b] create_task id=ABC123 task_id=a22158b2-5b8b-44c6-8915-2e5909bdc15e
+2025-08-21 00:39:35,148 INFO [service_b] published task.create task_id=a22158b2-5b8b-44c6-8915-2e5909bdc15e
+2025-08-21 00:39:35,148 INFO [uvicorn.access] 127.0.0.1:55904 - "POST /api/v1/equipment/cpe/ABC123 HTTP/1.1" 200
+2025-08-21 00:39:35,152 INFO [service_b] create_task id=ABC123 task_id=7d22f03f-f462-447d-8ce9-322fa71d591a
+2025-08-21 00:39:35,153 INFO [service_b] published task.create task_id=7d22f03f-f462-447d-8ce9-322fa71d591a
+2025-08-21 00:39:35,154 INFO [uvicorn.access] 127.0.0.1:55908 - "POST /api/v1/equipment/cpe/ABC123 HTTP/1.1" 200
+2025-08-21 00:39:35,157 INFO [uvicorn.access] 127.0.0.1:55912 - "GET /api/v1/equipment/cpe/ABC123/task/7d22f03f-f462-447d-8ce9-322fa71d591a HTTP/1.1" 200
+2025-08-21 00:39:35,163 INFO [service_b] create_task id=DEV404 task_id=df14c3aa-2381-4421-af2e-a0468801b9f9
+2025-08-21 00:39:35,164 INFO [service_b] published task.create task_id=df14c3aa-2381-4421-af2e-a0468801b9f9
+2025-08-21 00:39:35,164 INFO [uvicorn.access] 127.0.0.1:55914 - "POST /api/v1/equipment/cpe/DEV404 HTTP/1.1" 200
+2025-08-21 00:39:35,167 INFO [uvicorn.access] 127.0.0.1:55916 - "GET /api/v1/equipment/cpe/DEV404/task/df14c3aa-2381-4421-af2e-a0468801b9f9 HTTP/1.1" 200
+2025-08-21 00:39:35,686 INFO [uvicorn.access] 127.0.0.1:55920 - "GET /api/v1/equipment/cpe/DEV404/task/df14c3aa-2381-4421-af2e-a0468801b9f9 HTTP/1.1" 200
+2025-08-21 00:39:35,697 INFO [service_b] create_task id=DEV500 task_id=7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b
+2025-08-21 00:39:35,699 INFO [service_b] published task.create task_id=7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b
+2025-08-21 00:39:35,699 INFO [uvicorn.access] 127.0.0.1:55922 - "POST /api/v1/equipment/cpe/DEV500 HTTP/1.1" 200
+2025-08-21 00:39:35,706 INFO [uvicorn.access] 127.0.0.1:55926 - "GET /api/v1/equipment/cpe/DEV500/task/7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b HTTP/1.1" 200
+2025-08-21 00:39:36,228 INFO [uvicorn.access] 127.0.0.1:55928 - "GET /api/v1/equipment/cpe/DEV500/task/7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b HTTP/1.1" 200
+2025-08-21 00:39:36,742 INFO [uvicorn.access] 127.0.0.1:55936 - "GET /api/v1/equipment/cpe/DEV500/task/7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b HTTP/1.1" 200
+2025-08-21 00:39:37,262 INFO [uvicorn.access] 127.0.0.1:55938 - "GET /api/v1/equipment/cpe/DEV500/task/7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b HTTP/1.1" 200
+2025-08-21 00:39:37,782 INFO [uvicorn.access] 127.0.0.1:55940 - "GET /api/v1/equipment/cpe/DEV500/task/7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b HTTP/1.1" 200
+2025-08-21 00:39:38,304 INFO [uvicorn.access] 127.0.0.1:55942 - "GET /api/v1/equipment/cpe/DEV500/task/7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b HTTP/1.1" 200
+2025-08-21 00:39:38,818 INFO [uvicorn.access] 127.0.0.1:55946 - "GET /api/v1/equipment/cpe/DEV500/task/7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b HTTP/1.1" 200
+2025-08-21 00:40:06,626 INFO [uvicorn.error] Shutting down
+2025-08-21 00:40:06,626 INFO [uvicorn.error] Shutting down
+2025-08-21 00:40:06,728 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:40:06,728 INFO [uvicorn.error] Waiting for application shutdown.
+2025-08-21 00:40:06,733 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:40:06,733 INFO [uvicorn.error] Application shutdown complete.
+2025-08-21 00:40:06,733 INFO [uvicorn.error] Finished server process [38365]
+2025-08-21 00:40:06,733 INFO [uvicorn.error] Finished server process [38365]

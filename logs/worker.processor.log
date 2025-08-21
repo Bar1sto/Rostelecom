@@ -1,0 +1,25 @@
+2025-08-21 00:07:55,345 INFO [worker.processor] Logging configured. file=logs/worker.processor.log level=INFO
+2025-08-21 00:07:55,345 INFO [worker] Logging configured. file=logs/worker.log level=INFO
+2025-08-21 00:07:55,354 INFO [worker] connected. waiting for messages
+2025-08-21 00:39:25,394 INFO [worker.processor] call A url=https://localhost:8444/api/v1/equipment/cpe/ABC123 timeout=10s task=60f3929d-4bde-4e01-8de0-ef1c1ec58851
+2025-08-21 00:39:25,418 INFO [worker.processor] call A url=https://localhost:8444/api/v1/equipment/cpe/ABC123 timeout=10s task=4dd0f699-bc62-4915-8129-79afdd61eeda
+2025-08-21 00:39:25,418 INFO [worker.processor] call A url=https://localhost:8444/api/v1/equipment/cpe/DEV404 timeout=10s task=337076d5-d15c-4b0f-89f0-af982fbf8759
+2025-08-21 00:39:25,432 INFO [httpx] HTTP Request: POST https://localhost:8444/api/v1/equipment/cpe/DEV404 "HTTP/1.1 404 Not Found"
+2025-08-21 00:39:25,434 INFO [worker.processor] published result task=337076d5-d15c-4b0f-89f0-af982fbf8759 status=NOT_FOUND
+2025-08-21 00:39:25,949 INFO [worker.processor] call A url=https://localhost:8444/api/v1/equipment/cpe/DEV500 timeout=10s task=b3bdf023-04f9-4a22-a3c1-04131d71e2e9
+2025-08-21 00:39:25,956 INFO [httpx] HTTP Request: POST https://localhost:8444/api/v1/equipment/cpe/DEV500 "HTTP/1.1 500 Internal Server Error"
+2025-08-21 00:39:26,977 INFO [httpx] HTTP Request: POST https://localhost:8444/api/v1/equipment/cpe/DEV500 "HTTP/1.1 500 Internal Server Error"
+2025-08-21 00:39:28,986 INFO [httpx] HTTP Request: POST https://localhost:8444/api/v1/equipment/cpe/DEV500 "HTTP/1.1 500 Internal Server Error"
+2025-08-21 00:39:28,990 INFO [worker.processor] published result task=b3bdf023-04f9-4a22-a3c1-04131d71e2e9 status=FAILED
+2025-08-21 00:39:35,147 INFO [worker.processor] call A url=https://localhost:8444/api/v1/equipment/cpe/ABC123 timeout=10s task=a22158b2-5b8b-44c6-8915-2e5909bdc15e
+2025-08-21 00:39:35,153 INFO [worker.processor] call A url=https://localhost:8444/api/v1/equipment/cpe/ABC123 timeout=10s task=7d22f03f-f462-447d-8ce9-322fa71d591a
+2025-08-21 00:39:35,163 INFO [worker.processor] call A url=https://localhost:8444/api/v1/equipment/cpe/DEV404 timeout=10s task=df14c3aa-2381-4421-af2e-a0468801b9f9
+2025-08-21 00:39:35,168 INFO [httpx] HTTP Request: POST https://localhost:8444/api/v1/equipment/cpe/DEV404 "HTTP/1.1 404 Not Found"
+2025-08-21 00:39:35,170 INFO [worker.processor] published result task=df14c3aa-2381-4421-af2e-a0468801b9f9 status=NOT_FOUND
+2025-08-21 00:39:35,699 INFO [worker.processor] call A url=https://localhost:8444/api/v1/equipment/cpe/DEV500 timeout=10s task=7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b
+2025-08-21 00:39:35,707 INFO [httpx] HTTP Request: POST https://localhost:8444/api/v1/equipment/cpe/DEV500 "HTTP/1.1 500 Internal Server Error"
+2025-08-21 00:39:36,728 INFO [httpx] HTTP Request: POST https://localhost:8444/api/v1/equipment/cpe/DEV500 "HTTP/1.1 500 Internal Server Error"
+2025-08-21 00:39:38,748 INFO [httpx] HTTP Request: POST https://localhost:8444/api/v1/equipment/cpe/DEV500 "HTTP/1.1 500 Internal Server Error"
+2025-08-21 00:39:38,752 INFO [worker.processor] published result task=7bcc17b1-ae6b-4933-9cfd-7569d64e0c9b status=FAILED
+2025-08-21 00:39:58,451 INFO [worker.processor] published result task=60f3929d-4bde-4e01-8de0-ef1c1ec58851 status=FAILED
+2025-08-21 00:39:58,452 INFO [worker.processor] published result task=4dd0f699-bc62-4915-8129-79afdd61eeda status=FAILED
