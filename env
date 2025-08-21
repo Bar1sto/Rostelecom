@@ -1,0 +1,23 @@
+# RabbitMQ
+AMQP_url=amqp://guest:guest@rabbitmq:5672/
+RabbitMQ_EXCHANGE=tasks
+QUEUE_TASK_CREATE=task.create
+QUEUE_TASK_RESULT=task.result
+
+# TLS
+SSL_CERT_PATH=./cert.pem
+SSL_KEY_PATH=./key.pem
+
+#  URL сервис А
+SERVICE_A_URL=https://localhost:8444
+A_VERIFY_TLS=false
+
+WORKER_CONCURRENCY=5
+MAX_RETRIES=3
+
+REQUEST_TIMEOUT_BUFFER=5
+
+BACKOFF_BASE=1
+
+DIR_LOG=logs
+LOG_LEVEL=INFO
